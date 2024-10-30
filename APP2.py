@@ -9,7 +9,7 @@ data = pd.read_csv('https://raw.githubusercontent.com/qurat-azim/instructionalda
 st.sidebar.header('Select options')
 selected_category = st.sidebar.selectbox('Select Spicies', options=['All', 'Adele', 'Gentoo', 'Chinstrap'])
 if selected_category != 'All':
-    filtered_data = data[data['species' == selected_category]
+    filtered_data = data[data['species'] == selected_category]
 else:
     filtered_data = data
 st.write('###matplotlib histogram')
